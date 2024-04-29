@@ -4,11 +4,11 @@ from langchain_openai import OpenAIEmbeddings
 
 embeddings = OpenAIEmbeddings()
 
-# CHANGE "COLLECTION_NAME" ARGUMENT TO SAVING NEW CONTENT #
+# CHANGE "COLLECTION_NAME" ARGUMENT WHEN GETTING A NEW CONTENT #
 vector_db = Milvus(
     embeddings,
     connection_args={"host": "127.0.0.1", "port": "19530"},
-    collection_name="placeholder",
+    collection_name="icra_iflas_kanunu",
 )
 
 # Change query to get relevant information #

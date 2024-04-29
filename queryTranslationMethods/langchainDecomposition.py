@@ -50,7 +50,7 @@ def get_unique_union(documents: list[list]):
 all_documents = []
 for sub_question in sub_questions:
     sub_question_docs = []
-    collection_names = ["icra_iflas_not_1", "placeholder"]
+    collection_names = ["icra_iflas_not_1", "icra_iflas_kanunu"]
     for collection_name in collection_names:
         vector_db = Milvus(
             embeddings,

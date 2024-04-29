@@ -17,7 +17,7 @@ llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
 prompt = hub.pull("ahmet-kaan-ozbek/icra_iflas_danismani")
 
 # Collection names and QUERY which is the QUESTION
-collection_names = ["icra_iflas_not_1", "placeholder"]
+collection_names = ["icra_iflas_not_1"]
 query = ("Bir satır üstte paylaşılan somut olayda, ihtiyati haciz kararı hangi yer veya yerler mahkemesinden "
          "alınabilir? Anlatınız.")
 case = ("İstanbul’da Maslak-Levent’te yapı ve tasarım işleriyle uğraşan Batuhan Büyükusta firmasında kullanılmak üzere "

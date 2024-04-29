@@ -45,7 +45,7 @@ generate_queries = (
 )
 
 # Collection names and QUERY which is the QUESTION
-collection_names = ["icra_iflas_not_1"]
+collection_names = ["icra_iflas_not_1", "icra_iflas_kanunu"]
 query = "Borçluya verilen satış yetkisi hakkında detaylı bilgi paylaşabilir misin?"
 all_documents = []
 

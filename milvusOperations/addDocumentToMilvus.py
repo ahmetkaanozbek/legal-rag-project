@@ -16,7 +16,7 @@ embeddings = OpenAIEmbeddings()
 vector_db = Milvus.from_documents(
     docs,
     embeddings,
-    collection_name="placeholder",
+    collection_name="icra_iflas_kanunu",
     connection_args={"host": "127.0.0.1", "port": "19530"},
 )
 
