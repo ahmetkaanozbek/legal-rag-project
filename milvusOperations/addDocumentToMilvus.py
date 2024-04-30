@@ -4,7 +4,7 @@ from langchain_community.vectorstores import Milvus
 from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import CharacterTextSplitter
 
-# CHANGE DOCUMENT NAME TO ADD NEW EMBEDDINGS TO THE VECTOR STORE #
+# CHANGE DOCUMENT PATH TO ADD NEW EMBEDDINGS TO THE VECTOR STORE #
 loader = TextLoader("/Users/kaanozbek/Downloads/turk_icra_iflas_kanunu.txt")
 documents = loader.load()
 text_splitter = CharacterTextSplitter(chunk_size=3000, chunk_overlap=0)
