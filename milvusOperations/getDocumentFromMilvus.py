@@ -8,7 +8,7 @@ embeddings = OpenAIEmbeddings()
 vector_db = Milvus(
     embeddings,
     connection_args={"host": "127.0.0.1", "port": "19530"},
-    collection_name="icra_iflas_kanunu",
+    collection_name="icra_iflas_not_1",
 )
 
 # Change query to get relevant information #

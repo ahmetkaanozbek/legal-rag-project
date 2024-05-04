@@ -7,7 +7,7 @@ from langchain_text_splitters import CharacterTextSplitter
 # CHANGE DOCUMENT PATH TO ADD NEW EMBEDDINGS TO THE VECTOR STORE #
 loader = TextLoader("/Users/kaanozbek/Downloads/turk_icra_iflas_kanunu.txt")
 documents = loader.load()
-text_splitter = CharacterTextSplitter(chunk_size=3000, chunk_overlap=0)
+text_splitter = CharacterTextSplitter(chunk_size=5752, chunk_overlap=0)
 docs = text_splitter.split_documents(documents)
 
 embeddings = OpenAIEmbeddings()
